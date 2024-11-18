@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+    width: 33%;
+    background: linear-gradient(#1CE18A, #19CC89, #16B787);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+    
+}
+
+.right {
+    width: 67%;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.nome-logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input[type="number"], 
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.genero {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #1CE18A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button:hover {
+    background-color: #16B787;
+}
+h1 {
+  
+ 
+    font-size: 30px; /* Para títulos */
+    }
+    
+    p {
+      
+     
+    font-size: 30px; /* Para parágrafos */
+    }
+    img {
+        position: relative; /* ou absolute, dependendo do caso */
+        top: 20px; /* Move a imagem para baixo */
+        
+       
+      top: -85px; /* Move a imagem para cima */
+      }
+      
+      

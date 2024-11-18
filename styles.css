@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Para o posicionamento da imagem de fundo */
+    
+    background: linear-gradient(94deg, #0bdc1ce9 0%, #10f64acc 100%); /* Verde mais escuro com opacidade ajustada */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('img/Legumes-2.png'); /* URL da imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    opacity: 0.5; /* Define a opacidade da imagem de fundo */
+    z-index: 0; /* Coloca a imagem de fundo atrás de tudo */
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(2, 92, 41, 0.6); /* Verde escuro com opacidade ajustada */
+    z-index: 1; /* Coloca o fundo acima da imagem de fundo */
+}
+
+.container {
+    text-align: center;
+    z-index: 2; /* Coloca o conteúdo acima do fundo */
+}
+
+.logo {
+    width: 300px; /* Tamanho da logo */
+    height: auto; /* Mantém a proporção */
+    margin-bottom: 10px; /* Espaço abaixo da logo */
+}
+
+.promo-image {
+    width: 250px; /* Tamanho da imagem promocional */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem promocional */
+}
+
+.slogan {
+    font-size: 20px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor da frase */
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 205px; /* Tamanho do botão */
+    height: 58px; /* Altura do botão */
+    background: #004E3E; /* Cor do botão mais escura */
+    color: white;
+    border: none;
+    border-radius: 3px; /* Arredondar todos os cantos */
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: #003E30; /* Cor do botão ao passar o mouse */
+}
+
+.signup {
+    margin-top: 20px;
+    font-size: 20px; /* Tamanho da fonte */
+}
+
+.link {
+    color: #ffffff; /* Cor do link */
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline; /* Destaca o link ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .logo {
+        width: 150px; /* Ajusta o tamanho da logo em telas menores */
+    }
+
+    .promo-image {
+        width: 120px; /* Ajusta o tamanho da imagem promocional */
+    }
+
+    .slogan {
+        font-size: 18px; /* Diminui o tamanho da fonte em telas menores */
+    }
+
+    .button {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    }
+
+    .signup {
+        font-size: 18px; /* Diminui o tamanho da fonte */
+    }
+}

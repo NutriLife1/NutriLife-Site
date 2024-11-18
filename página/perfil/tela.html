@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="lugo.png" alt="lugo.png" class="logo">
+            <img src="nome.png" alt="nome.png" class="nome-logo">
+            <p class="texto-grande">Conte-nos um pouco mais sobre você</p>
+        </div>
+        <div class="right">
+            <img src="logo.png" alt="logo.png" class="logo">
+            <p class="texto-grande">Personalize o seu perfil</p>
+            <form>
+                <label for="idade">Sua idade:</label>
+                <input type="number" id="idade" name="idade" min="14" max="100">
+                
+                <label for="peso">Seu peso (kg):</label>
+                <input type="text" id="peso" name="peso" placeholder="Ex: 70,5">
+                
+                <label for="altura">Sua altura (m):</label>
+                <input type="text" id="altura" name="altura" placeholder="Ex: 1,75">
+                
+                <div class="genero">
+                    <label><input type="radio" name="genero" value="homen"> Homem</label>
+                    <label><input type="radio" name="genero" value="mulher"> Mulher</label>
+                    <label><input type="radio" name="genero" value="outros"> Outros</label>
+                </div>
+                
+                <button type="submit"><a href="../objetivo/index.html">PRÓXIMO</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
